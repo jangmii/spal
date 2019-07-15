@@ -1,0 +1,21 @@
+.sh_upload_button{
+    text-align: center;
+    font-size:50px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.sh_search{
+    float:left !important;
+}
+.sh_navcenter{
+    margin-right: 260px;
+    margin-top: 10px;
+}
+.sh_btn{
+    border: 0px!important;
+}
+.sh_searchbox{
+    width: 400px;
+    border: 0px;
+    border-bottom: 1px solid #dadada;
+}
