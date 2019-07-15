@@ -21,7 +21,7 @@
 
 	<!-- Font Icons CSS
    ================================================== -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
    <link rel="stylesheet" href="css/ionicons.min.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     
@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/seonho.css">
     <link rel="stylesheet" href="css/jangmi.css">
+    <!--secarh bar SCSS-->
+    <link rel="stylesheet/scss" href="scss/search.scss">
 
 	<!-- Google web font 
    ================================================== -->	
@@ -48,7 +50,6 @@
 
 </div>
 
-
 <!-- Navigation section
 ================================================== -->
 <div class="nav-container">
@@ -63,10 +64,18 @@
               </div>
               <div class="navicon">
                  <div class="sh_navcenter">
-                    <form class="sh_search" role="search">
+                    <form class="sh_search" role="search" style="display:none;" >
                        <input type="text" class="sh_searchbox" placeholder="Search">
                        <button type="submit" class="sh_btn btn btn-default"><i class="fas fa-search"></i></button>
                     </form>
+                    <div class="search">
+                        <input type="checkbox" id="trigger" class="search__checkbox" />
+                        <label class="search__label-init" for="trigger"></label>
+                        <label class="search__label-active" for="trigger"></label>
+                        <div class="search__border"></div>
+                        <input type="text" class="search__input" />
+                        <div class="search__close"></div>
+                      </div>
                  </div>
                   <p class ="sh_upload_button">
                      <a href="#"><img src="https://img.icons8.com/ios/30/000000/plus.png"></a>
@@ -149,6 +158,7 @@
 <script src="js/imagesloaded.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/jangmi.js"></script>
 <!-- fontawesome icon -->
 <script src="https://kit.fontawesome.com/5c3df2ea89.js"></script>
 
